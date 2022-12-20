@@ -168,6 +168,20 @@
                 "type": "boolean",
                 "default": true,
                 "group": "post"
+            },
+            "show_social_media_icons": {
+                "type": "boolean",
+                "default": false
+            },
+            "show_rss_icon": {
+                "type": "boolean",
+                "default": false
+            },
+            "mastodon_account": {
+                "type": "text"
+            },
+            "github_account": {
+                "type": "text"
             }
         }
     },

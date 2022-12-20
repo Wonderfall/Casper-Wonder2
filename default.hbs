@@ -65,6 +65,25 @@
                         {{/unless}}
                     </div>
                 {{/unless}}
+                {{#if @custom.show_social_media_icons}}
+                <div class="gh-social">
+                    {{#if @site.facebook}}
+                        <a class="gh-social-link gh-social-facebook" href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="me noopener">{{> "icons/facebook"}}</a>
+                    {{/if}}
+                    {{#if @site.twitter}}
+                        <a class="gh-social-link gh-social-twitter" href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="me noopener">{{> "icons/twitter"}}</a>
+                    {{/if}}
+                    {{#if @custom.mastodon_account}}
+                        <a class="gh-social-link gh-social-mastodon" href="{{@custom.mastodon_account}}" title="Mastodon" target="_blank" rel="me noopener">{{> "icons/mastodon"}}</a>
+                    {{/if}}
+                    {{#if @custom.github_account}}
+                        <a class="gh-social-link gh-social-github" href="{{@custom.github_account}}" title="GitHub" target="_blank" rel="me noopener">{{> "icons/github"}}</a>
+                    {{/if}}
+                    {{#if @custom.show_rss_icon}}
+                        <a class="gh-social-link gh-social-rss" href="{{@site.url}}/rss/" title="RSS" target="_blank" rel="me noopener">{{> "icons/rss"}}</a>
+                    {{/if}}
+                </div>
+                {{/if}}
             </div>
         </div>
     </header>
