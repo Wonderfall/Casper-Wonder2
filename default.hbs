@@ -16,6 +16,9 @@
     {{#if @custom.highlight_code}}
         <link rel="stylesheet" type="text/css" href="{{asset "built/tomorrow-night.min.css"}}" />
     {{/if}}
+    {{#if @custom.show_scroll_to_top_button}}
+        <link rel="stylesheet" type="text/css" href="{{asset "built/scrolltop.css"}}" />
+    {{/if}}
 
     {{!-- This tag outputs all your advanced SEO meta, structured data, and other important settings,
     it should always be the last tag before the closing head tag --}}
@@ -128,6 +131,13 @@ $(document).ready(function () {
     $(".gh-content").fitVids();
 });
 </script>
+
+<!-- scrolltop button -->
+{{#if @custom.show_scroll_to_top_button}}
+    <button class="btn-toggle-round scroll-top js-scroll-top" type="button" title="Scroll to top">{{> "icons/scrolltop"}}</button>
+    <script src="{{asset "built/scrolltop.js"}}"></script>
+{{/if}}
+
 
 {{!-- Ghost outputs required functional scripts with this tag - it should always be the last thing before the closing body tag --}}
 {{ghost_foot}}

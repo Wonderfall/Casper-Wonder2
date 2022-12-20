@@ -1,0 +1,33 @@
+.scroll-top {
+    position: fixed;
+    z-index: 50;
+    padding: 0;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);    
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all .4s ease;
+    border: none;
+    color: #ccc;
+    background-color: var(--ghost-accent-color);
+  }
+ 
+  .scroll-top .icon-tabler-arrow-up {
+    position: absolute;
+    stroke-width: 2px;
+    stroke: #333;
+  }
+  
+  .scroll-top.is-active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }

@@ -1,0 +1,2 @@
+.scroll-top{align-items:center;background-color:var(--ghost-accent-color);border:none;border-radius:50%;bottom:20px;color:#ccc;cursor:pointer;display:flex;height:46px;justify-content:center;opacity:0;padding:0;position:fixed;right:20px;transform:translateY(15px);transition:all .4s ease;visibility:hidden;width:46px;z-index:50}.scroll-top .icon-tabler-arrow-up{stroke-width:2px;stroke:#333;position:absolute}.scroll-top.is-active{opacity:1;transform:translateY(0);visibility:visible}
+/*# sourceMappingURL=scrolltop.css.map */

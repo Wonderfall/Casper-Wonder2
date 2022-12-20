@@ -191,6 +191,10 @@
             "commento_comments": {
                 "type": "text",
                 "group": "post"
+            },
+            "show_scroll_to_top_button": {
+                "type": "boolean",
+                "default": false
             }
         }
     },
