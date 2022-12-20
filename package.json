@@ -182,6 +182,11 @@
             },
             "github_account": {
                 "type": "text"
+            },
+            "highlight_code": {
+                "type": "boolean",
+                "default": false,
+                "group": "post"
             }
         }
     },
