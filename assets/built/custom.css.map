@@ -1,0 +1,1 @@
+{"version":3,"sources":["custom.css"],"names":[],"mappings":"AAAA,0BACI,oCAAqC,CACrC,qBACJ,CAEA,iBACI,cACJ","file":"custom.css","sourcesContent":["img.post-card-image:hover {\n    filter: brightness(1.1) contrast(1.1);\n    transform: scale(1.05);\n}\n\n.post-card-image {\n    transition: 0.5s;\n}"]}
