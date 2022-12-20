@@ -53,6 +53,9 @@ into the {body} tag of the default.hbs template --}}
                     {{#if reading_time}}
                         <span class="byline-reading-time"><span class="bull">&bull;</span> {{reading_time}}</span>
                     {{/if}}
+                    {{#if @custom.commento_comments}}
+                        <span class="bull">&bull;</span> <a href="{{url}}#commento" style="color:#738a94"></a>
+                    {{/if}}
                 </div>
             </div>
 
@@ -90,6 +93,19 @@ into the {body} tag of the default.hbs template --}}
         <section class="article-comments gh-canvas">
             {{comments}}
         </section>
+    {{/if}}
+
+    {{#if @custom.commento_comments}}
+    <section class="article-comments gh-canvas">
+        <script defer
+            src="{{@custom.commento_comments}}"
+            data-css-override="{{asset "built/commento.css"}}"
+            data-auto-init="false">
+        </script>
+        <script src="{{asset "built/lazy-comments.js"}}"></script>
+        <noscript>If you want to see and/or write comments, consider enabling JavaScript.</noscript>
+        <div id="commento"></div>
+    </section>
     {{/if}}
 
 </article>

@@ -1,0 +1,108 @@
+.commento-root * {
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #8a97b2;
+    text-rendering: optimizeLegibility;
+}
+
+.commento-root input[type=text], .commento-root textarea {
+    background: #1b1e22;
+    border: 1px solid rgba(50,50,93,.1);
+    border-radius: 3px;
+    color: #8d9ec6;
+}
+
+.commento-root .commento-logged-container .commento-logged-in-as .commento-name {
+  color: #abbed2;
+  border: none;
+  font-weight: 700;
+  position: absolute;
+  top: 6px;
+  left: 48px;
+  cursor: pointer;
+}
+
+.commento-root .commento-card {
+    padding: 12px 0 0 12px;
+    margin-top: 16px;
+    border-top: 1px solid #2645d000;
+}
+
+.commento-root .commento-card .commento-name {
+    font-weight: 700;
+    font-size: 14px;
+    color: #abbec8;
+    border: none;
+    display: table;
+    z-index: 1;
+    margin-left: 48px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: fit-content;
+    cursor: pointer;
+}
+
+button#commento-submit-button-root:hover {
+    background: #1c7fd9;
+}
+
+.commento-root .commento-login .commento-login-text {
+    text-align: right;
+    margin-right: 16px;
+    height: 38px;
+    color: #49a4ff;
+    font-weight: 700;
+    cursor: pointer;
+    display: block;
+}
+
+textarea#commento-textarea-root:focus {
+    background: #282c32;
+}
+
+input#commento-guest-details-input-root:focus {
+    background: #282c32;
+}
+
+input#commento-guest-details-input-root::placeholder {
+    color: #7f8e96;
+}
+
+.commento-root .commento-avatar-img {
+    width: 38px;
+    height: 38px;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin-right: 10px;
+}
+
+.commento-root .commento-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 22px;
+    float: left;
+    margin-right: 10px;
+    border: 0 transparent;
+}
+
+.commento-root .commento-permalink {
+    display: none;
+}
+
+.commento-root .commento-markdown-button {
+    display: none;
+}
+
+.commento-profile-button svg {
+    fill: #8a97b2;
+}

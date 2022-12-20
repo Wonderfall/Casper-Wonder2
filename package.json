@@ -187,6 +187,10 @@
                 "type": "boolean",
                 "default": false,
                 "group": "post"
+            },
+            "commento_comments": {
+                "type": "text",
+                "group": "post"
             }
         }
     },
