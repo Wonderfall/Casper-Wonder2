@@ -117,6 +117,20 @@
 {{!-- Scripts - handle member signups, responsive videos, infinite scroll, floating headers, and galleries --}}
 <script src="{{asset "built/jquery.js"}}"></script>
 <script src="{{asset "built/casper.js"}}"></script>
+{{#if @custom.commento_comments}}
+    <script>
+    window.customCommentsText = function(count) {
+        if(count === 0) {
+            return "0 comm.";
+        } else if (count === 1) {
+            return "1 comm.";
+        } else {
+            return count + " comms.";
+        }
+    }
+    </script>
+    <script src="{{@custom.commento_comments}}/js/count.js" data-custom-text="window.customCommentsText"></script>
+{{/if}}
 {{#if @custom.highlight_code}}
     <script src="{{asset "built/highlight.min.js"}}"></script>
     <script>hljs.highlightAll();</script>

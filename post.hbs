@@ -98,7 +98,7 @@ into the {body} tag of the default.hbs template --}}
     {{#if @custom.commento_comments}}
     <section class="article-comments gh-canvas">
         <script defer
-            src="{{@custom.commento_comments}}"
+            src="{{@custom.commento_comments}}/js/commento.js"
             data-css-override="{{asset "built/commento.css"}}"
             data-auto-init="false">
         </script>
