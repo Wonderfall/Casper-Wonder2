@@ -23,7 +23,7 @@
   .scroll-top .icon-tabler-arrow-up {
     position: absolute;
     stroke-width: 2px;
-    stroke: #333;
+    stroke: hsla(0,0%,100%,.75);
   }
   
   .scroll-top.is-active {
