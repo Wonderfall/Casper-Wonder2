@@ -1,3 +1,12 @@
+.author-profile-pic {
+    background: none;
+}
+
+.author-profile-image,
+.avatar-wrapper {
+    background: none;
+}
+
 img.post-card-image:hover {
     filter: brightness(1.1) contrast(1.1);
     transform: scale(1.05);
@@ -5,4 +14,35 @@ img.post-card-image:hover {
 
 .post-card-image {
     transition: 0.5s;
+}
+
+.post-card-image-link {
+    border-radius: 10px;
+}
+
+span.post-card-primary-tag {
+    color: var(--ghost-accent-color);
+}
+
+.has-cover .site-header-content {
+    min-height: 460px;
+}
+
+@media (max-width: 767px) {
+    .has-cover .site-header-content {
+        min-height: 240px;
+    }
+}
+
+.site-header-content {
+    padding-bottom: 9vmin;
+    padding-top: calc(9vmin + 44px);
+}
+
+.post-card-excerpt {
+    -webkit-line-clamp: 5;
+}
+
+.post-card:not(.post-card-large):not(.post-card-full):not(.dynamic):not(.no-image) .post-card-excerpt {
+    -webkit-line-clamp: 5;  
 }
