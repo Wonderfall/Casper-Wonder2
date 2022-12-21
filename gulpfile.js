@@ -72,6 +72,15 @@ function js(done) {
     ], handleError(done));
 }
 
+function js_custom(done) {
+    pump([
+        src('assets/js/custom/*.js', {sourcemaps: true}),
+        uglify(),
+        dest('assets/built/', {sourcemaps: '.'}),
+        livereload()
+    ], handleError(done));
+}
+
 function zipper(done) {
     const filename = require('./package.json').name + '.zip';
 
@@ -93,7 +102,7 @@ const cssWatcher = () => watch('assets/css/**', css);
 const jsWatcher = () => watch('assets/js/**', js);
 const hbsWatcher = () => watch(['*.hbs', 'partials/**/*.hbs'], hbs);
 const watcher = parallel(cssWatcher, jsWatcher, hbsWatcher);
-const build = series(css, js);
+const build = series(css, js, js_custom);
 
 exports.build = build;
 exports.zip = series(build, zipper);
